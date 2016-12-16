@@ -1,0 +1,14 @@
+name: submodule
+type: php:5.6
+build:
+  flavor: composer
+disk: 2048
+
+web:
+  locations:
+    "/":
+      root: "public"
+      passthru: "/index.php"
+      index:
+        - index.php
+      allow: true
